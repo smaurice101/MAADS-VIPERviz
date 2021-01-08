@@ -3,12 +3,9 @@
 Visualize streaming insights over conventional web browers using HTTPS with websockets.
 
 MAADS-VIPERviz is visualization technology to visualize streaming results from Kafka.  Specifically, HPDE will apply machine learning to streaming data and store results in Kafka for:
-1)	Predictive Analytics
-a.	Users can visualize these results by calling the file: Prediction.HTML
-2)	Prescriptive Analytics or Optimization
-a.	Users can visualize these results by calling the file: Optimization.HTML
-3)	Anomaly Detection using unsupervised learning
-a.	Users can visualize these results by calling the file: Anomaly.HTML
+1)	Predictive Analytics:	Users can visualize these results by calling the file: Prediction.HTML
+2)	Prescriptive Analytics or Optimization:	Users can visualize these results by calling the file: Optimization.HTML
+3)	Anomaly Detection using unsupervised learning: Users can visualize these results by calling the file: Anomaly.HTML
 4) Algorithms and Insights Management (AiMS): Aims.html
 
 **INSTRUCTIONS:**
