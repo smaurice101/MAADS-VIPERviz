@@ -11,7 +11,9 @@ a.	Users can visualize these results by calling the file: Optimization.HTML
 a.	Users can visualize these results by calling the file: Anomaly.HTML
 4) Algorithms and Insights Management (AiMS): Aims.html
 
-START: [viperviz binary] [host] [port]
+**INSTRUCTIONS:**
+1) START: [viperviz binary] [host] [port]
+2) Copy the contents of VIEWS.ZIP to the folder **_viperviz/vews_**
 
 Viperviz will listen on [port] for HTTP and [port]+1 on HTTPS connection.  For example, if you run viperviz on port 8000, it will accept HTTP connections on port 8000, and HTTPS connections on port 8001.
 
@@ -19,4 +21,6 @@ Viperviz will listen on [port] for HTTP and [port]+1 on HTTPS connection.  For e
 
 VIPERviz uses websockets to connect to Web browsers over secure HTTPS connections.   Users access the visualization using standard browsers to connect to VIPERviz.  The format of the URL must be the following:
 
-https://[host]:[port]/[HTML file]?topic=[Topic Name] &offset=[Offset, set to 0]&topictype=[anomaly, prediction,optimization,or AIMS]&secure=[1 or 0]&consumerid=[Consumer ID for the topic] &vipertoken=[Viper token]
+1) https://[host]:[port]/[HTML file]?topic=[Topic Name] &offset=[Offset, set to 0]&topictype=[anomaly, prediction,optimization]&secure=[1 or 0]&consumerid=[Consumer ID for the topic] &vipertoken=[Viper token]
+
+2) For AIMS use: https://[host]:[port]/aims.html?secure=[1 or 0]&vipertoken=[copy/paste the token in ADMIN.TOK file]
