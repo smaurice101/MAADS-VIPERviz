@@ -22,6 +22,6 @@ Viperviz will listen on [port] for HTTP and [port]+1 on HTTPS connection.  For e
 
 VIPERviz uses websockets to connect to Web browsers over secure HTTPS connections.   Users access the visualization using standard browsers to connect to VIPERviz.  The format of the URL must be the following:
 
-1) https://[host]:[port]/[HTML file]?topic=[Topic Name] &offset=[Offset, set to 0]&topictype=[anomaly, prediction,optimization]&secure=[1 or 0]&consumerid=[Consumer ID for the topic] &vipertoken=[Viper token]
+1) https://[host]:[port]/[HTML file]?topic=[Topic Name] &offset=[Offset, set to 0]&topictype=[anomaly, prediction,optimization]&secure=[1 or 0]&consumerid=[Consumer ID for the topic] &vipertoken=[copy/paste the token in ADMIN.TOK file]
 
 2) For AIMS use: https://[host]:[port]/aims.html?secure=[1 or 0]&vipertoken=[copy/paste the token in ADMIN.TOK file]
