@@ -22,3 +22,10 @@ VIPERviz uses websockets to connect to Web browsers over secure HTTPS connection
 **1) Streaming Insights:** https://[host]:[port]/[HTML file]?topic=[Topic Name] &offset=[Offset, set to 0]&rollbackoffset=[number of offsets to rollback the data stream]&topictype=[anomaly, prediction,optimization]&secure=[1 or 0]&append=[1=append all data to the web table, 0=do not append]&consumerid=[Consumer ID for the topic]&groupid=[Group id to consume parallel messages]&vipertoken=[copy/paste the token in ADMIN.TOK file]
 
 **2) For AIMS use:** https://[host]:[port]/aims.html?secure=[1 or 0]&vipertoken=[copy/paste the token in ADMIN.TOK file]
+
+**NOTES:**
+1) If you are visualizing big data, then set append=0, offset=-1, and choose a rollbackoffset.  For example, if offset=-1, append=0 and rollbackoffset=100, then you will only see that last 100 entries without consuming too much memory in your web browser. 
+
+2) rollbackoffset works when offset=-1 otherwise it is ignored.
+
+3) if you want to do parallel consuming of insights then use Kafka's consumer group. For example, if you have 100 people who want to consume insights from 1 topic - then create a topic with 100 partitions, and use the group id.  This way, each individual will receive insights **at the same time**.
