@@ -14,7 +14,7 @@ MAADS-VIPERviz is visualization technology to visualize streaming results from K
 2) Copy the contents of VIEWS.ZIP to the folder **_viperviz/vews_**
 3) You must have server and client certificates in the same folder as Viperviz named: client.cer.pem and client.key.pem.  Examples are provided in the ZIP files to get you started but you should have official certificates for HTTPS connections.
 
-Viperviz will listen on [port] for HTTP and [port]+1 on HTTPS connection.  For example, if you run viperviz on port 8000, it will accept HTTP connections on port 8000, and HTTPS connections on port 8001.
+Viperviz will listen on [port] for HTTP and [port]+1 on HTTPS connection.  For example, if you run viperviz on port 8000, it will accept HTTP connections on port 8000, and HTTPS connections on port 8001. For **On-Prem** you may need to use HTTP.
 
 **YOU MUST RUN VIPERVIZ IN THE SAME FOLDER/DIRECTORY AS MAADS-VIPER.**
 
@@ -22,7 +22,7 @@ VIPERviz uses websockets to connect to Web browsers over secure HTTPS connection
 
 **1) Streaming Insights:** https://[host]:[port]/[HTML file]?topic=[Topic Name] &offset=[Offset, set to 0]&rollbackoffset=[number of offsets to rollback the data stream]&topictype=[anomaly, prediction,optimization,generic]&secure=[1 or 0]&append=[1=append all data to the web table, 0=do not append]&consumerid=[Consumer ID for the topic]&groupid=[Group id to consume parallel messages]&vipertoken=[copy/paste the token in ADMIN.TOK file]
 
-**_NOTE_**: For topictype=generic, to visualize multiple topics, separate them by a comma in the **topic** key.
+**_NOTE_**: For topictype=generic, to visualize multiple topics, separate them by a comma in the **topic** key.  If using **HTTP**, make sure to set **secure=0** in the URL, if using HTTPS then set **secure=1** in the URL. 
 
 **2) For AIMS use:** https://[host]:[port]/aims.html?secure=[1 or 0]&vipertoken=[copy/paste the token in ADMIN.TOK file]
 
