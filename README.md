@@ -12,7 +12,7 @@ MAADS-VIPERviz is visualization technology to visualize streaming results from K
 **INSTRUCTIONS:**
 1) START: [viperviz binary] [host] [port]
 2) Copy the contents of VIEWS.ZIP to the folder **_viperviz/vews_** *in the same directory as VIPER.*
-3) You must have server and client certificates in the same folder as Viperviz named: client.cer.pem and client.key.pem.  Examples are provided in the ZIP files to get you started but you should have official certificates for HTTPS connections.
+3) You must have server and client certificates in the same folder as Viperviz named: client.cer.pem, server.cer.pem, and client.key.pem.  Examples are provided in the ZIP files to get you started but you should have official certificates for HTTPS connections.
 
 Viperviz will listen on [port] for HTTP and [port]+1 on HTTPS connection.  For example, if you run viperviz on port 8000, it will accept HTTP connections on port 8000, and HTTPS connections on port 8001. For **On-Prem** you may need to use HTTP.
 
