@@ -8,6 +8,7 @@ MAADS-VIPERviz is visualization technology to visualize streaming results from K
 3)	Anomaly Detection using unsupervised learning: Users can visualize these results by calling the file: **_Anomaly.HTML_**
 4) Generic Topics with raw data can be visualized from a Kafka topic or topics. The data should have been produced by viperproducetotopic (in MAADS TML python libray or REST).  Call the html file **generictopics.HTML_**
 5) Algorithms and Insights Management (AiMS): **_Aims.html_**
+6) Stream Logs from Viper/Hpde/Viperviz to Kafka use: **_viperlogs.html_**
 
 **INSTRUCTIONS:**
 1) START: [viperviz binary] [host] [port]
@@ -25,6 +26,8 @@ VIPERviz uses websockets to connect to Web browsers over secure HTTPS connection
 **_NOTE_**: For topictype=generic, to visualize multiple topics, separate them by a comma in the **topic** key.  If using **HTTP**, make sure to set **secure=0** in the URL, if using HTTPS then set **secure=1** in the URL. 
 
 **2) For AIMS use:** https://[host]:[port]/aims.html?secure=[1 or 0]&vipertoken=[copy/paste the token in ADMIN.TOK file]
+
+**3) For Log Streaming use:** https://[host]:[port]/viperlogs.html?topic=[topic containing logs]&offset=[-1 to go to last offset or another number]&rollbackoffset=[enter number]&append=[1 or 0]&secure=[1 or 0]&consumerid=&vipertoken=[copy/paste the token in ADMIN.TOK file]
 
 **NOTES:**
 1) If you are visualizing big data, then set append=0, offset=-1, and choose a rollbackoffset.  For example, if offset=-1, append=0 and rollbackoffset=100, then you will only see that last 100 entries without consuming too much memory in your web browser. 
