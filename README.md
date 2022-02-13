@@ -9,6 +9,7 @@ MAADS-VIPERviz is visualization technology to visualize streaming results from K
 4) Generic Topics with raw data can be visualized from a Kafka topic or topics. The data should have been produced by viperproducetotopic (in MAADS TML python libray or REST).  Call the html file **generictopics.HTML_**
 5) Algorithms and Insights Management (AiMS): **_Aims.html_**
 6) Stream Logs from Viper/Hpde/Viperviz to Kafka use: **_viperlogs.html_**
+7) Stream Preprocess Analysis from Viper/Hpde/Viperviz to Kafka use: **_preprocess.html_**
 
 **INSTRUCTIONS:**
 1) START: [viperviz binary] [host] [port]
